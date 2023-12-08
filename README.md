@@ -3,8 +3,8 @@
 *How to grab extra domestic sites for Xray (ProjectX)*
 
 1. Configure [XRay](https://xtls.github.io/en/) client to include `geosite` and domestic domains in routing and switch `.log.loglevel` to
-   `"info"`. See [easy-xray](https://github.com/EvgenyNerush/easy-xray) client config for reference. Set wrong ip address of the server to
-   cause connection error if client tries to connect. Let `congig_client.json`contains the following:
+   `"info"`. See [easy-xray](https://github.com/EvgenyNerush/easy-xray) client config for reference. Set wrong ip address or port of the
+   server to cause connection error if client tries to connect. Let `congig_client.json`contains the following:
 ```
   "log": {
     "access": "none",
@@ -14,6 +14,7 @@
   },
   ...
             "address": "1.2.3.4",
+            "port": 444,
   ...
   "routing": {
     "domainStrategy": "AsIs",
@@ -60,5 +61,11 @@ sudo xray -c config_client.json | grep -B 15 Warning | grep sniffed
           "ext:customgeo.dat:coherence-extra"
         ],
         ...
+```
+
+6. To use this list in clients (for instance, in Hiddify's `Settings/Routing/Custom rules/Direct URL`), they can be transformed to a
+   comma-separated list with `./4hiddify.sh` script:
+```
+    ./4hiddify.sh data/coherence-extra > comma-separated-list.txt
 ```
 
