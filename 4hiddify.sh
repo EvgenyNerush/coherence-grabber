@@ -2,7 +2,7 @@
 
 if [ -v $1 ]
 then
-    echo -e "To convert geodata from domain-list-community format (as data/coherence-extra)
+    echo -e "To convert geodata from v2fly's domain-list-community format (as data/coherence-extra)
 to text format of Hiddify or V2Ray, try:
     ./4hiddify.sh file-with-domain-list"
     exit 1

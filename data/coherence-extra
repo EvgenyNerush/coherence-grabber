@@ -1,3 +1,7 @@
+# websites that aren't downloaded properly throughout the server for unclear reason
+habr.com
+habrastorage.org
+
 # grabbed from most popular RU websites
 lenta.com @ru
 gldn.net @ru
@@ -5,22 +9,38 @@ yastatic.net @ru
 yandex.net @ru
 mycdn.me @ru
 avito.st @ru
-gismeteo.st @ru
-gismeteo.net @ru
+gismeteo.st @ru @by
+gismeteo.net @ru @by
 ozonusercontent.com @ru
 mradx.net @ru
 aestatic.net @ru
-alicdn.com @ru
-rambler.pushwoosh.com @ru
-vk.com @ru
+pushwoosh.com @ru @by
+vk.com @ru @by
+userapi.com @ru
 otm-r.com @ru
 2gis.com @ru
 championat.com @ru
 rus-tv.su @ru
-kpcdn.net @ru
-kp.house @ru
-kp.kg @ru
+kpcdn.net @ru @by
+kp.house @ru @by
+kp.kg @ru @by
 kaspersky-labs.com @ru
+yadro.com @ru
+boosty.to @ru
+eaglecdn.com @ru
+livejournal.com @ru
+livejournal.net @ru
+
+# grabbed from most popular BY websites
+edc.sale @ru @by
+stellarlabs.ai @ru @by
+myminsk.com @by
+sputniknews.com @ru @by
+sputnikglobe.com @ru @by
+
+# grabbed from most popular IR websites
+digikala.com @ir
+bale.ai @ru @ir
 
 # grabbed from most popular CN websites
 qq.com @cn

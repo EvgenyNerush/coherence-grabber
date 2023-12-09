@@ -63,9 +63,10 @@ sudo xray -c config_client.json | grep -B 15 Warning | grep sniffed
         ...
 ```
 
-6. To use this list in clients (for instance, in Hiddify's `Settings/Routing/Custom rules/Direct URL`), they can be transformed to a
-   comma-separated list with `./4hiddify.sh` script:
+6. To use this list in clients (for instance, in Hiddify's `Settings/Routing/Custom rules/Direct URL`), they can be transformed with
+   scripts:
 ```
-    ./4hiddify.sh data/coherence-extra > comma-separated-list.txt
+    ./4hiddify.sh data/coherence-extra > comma-and-newline-separated-list.txt # also fit for V2Ray
+    ./4nekoray.sh data/coherence-extra > newline-separated-list.txt
 ```
 
