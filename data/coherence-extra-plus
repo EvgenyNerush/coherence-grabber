@@ -1,0 +1,11 @@
+# websites which provide geolocation api
+googleapis.com
+mozilla.com
+microsoft.com
+apple.com
+
+# websites which aren't downloaded properly throughout the server for unclear reason
+habr.com
+habrastorage.org
+viqeo.tv
+

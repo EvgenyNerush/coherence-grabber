@@ -63,10 +63,13 @@ sudo xray -c config_client.json | grep -B 15 Warning | grep sniffed
         ...
 ```
 
-6. To use this list in clients (for instance, in Hiddify's `Settings/Routing/Custom rules/Direct URL`), they can be transformed with
-   scripts:
+6. To use this list in clients (for instance, in Hiddify's `Settings/Routing/Custom rules/Direct URL`), it can be transformed with
+   commands
 ```
-    ./4hiddify.sh data/coherence-extra > comma-and-newline-separated-list.txt # also fit for V2Ray
-    ./4nekoray.sh data/coherence-extra > newline-separated-list.txt
+    ./4hiddify.sh data/* > comma-and-newline-separated-list.txt # also fit for V2Ray
+    ./4nekoray.sh data/* > newline-separated-list.txt
 ```
+which not only make the right format, but also adds websites from `data/coherence-extra-plus` to the list. These websites
+shouldn't be blocked by the server, but preferably should be opened directly from the client. For example, googleapis.com is used (among
+other purposes) to get geolocation from ip-address and obviously works correctly only when accessed directly.
 
